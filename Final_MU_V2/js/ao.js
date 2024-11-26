@@ -36,10 +36,7 @@ $(document).ready(function() {
             khoi1.removeClass('khunsai').addClass('khun');
             if(user.val().length >= 3 && user.val().length <= 15 && pass.val().length >= 3 && pass.val().length <= 15){
                 alert("đăng nhập thành công! Chào mừng đến với hệ thống");
-                alert("chuyển hướng sau 2 giây");
-                setTimeout(()=>{
-                    window.location.href = "https://chatgpt.com/";
-                }, 1000);
+                
             }
             else{
                 alert("Tên đăng nhập và mật khẩu phải từ 3 đến 15 kí tự!");
