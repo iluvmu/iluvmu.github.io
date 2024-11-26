@@ -37,10 +37,7 @@ $(document).ready(function() {
             if(user.val().length >= 3 && user.val().length <= 15 && pass.val().length >= 3 && pass.val().length <= 15 ){
                 if(reg.val().length === pass.val().length){
                     alert("đăng kí thành công! Chào mừng đến với hệ thống");
-                    alert("chuyển hướng sau 2 giây");
-                    setTimeout(()=>{
-                    window.location.href = "https://chatgpt.com/";
-                }, 1000);
+                   
                 }
                 else{
                     alert("nhập lại mật khẩu không khớp")
