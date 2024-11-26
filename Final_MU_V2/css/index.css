@@ -1,0 +1,431 @@
+
+   /* thanh điều hướng */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav {
+    background-color: #B6C99B;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li,a {
+    color: black;
+    font-size: 15px;
+}
+
+
+
+
+
+nav ul li:nth-child(3) {
+  position: relative; 
+}
+nav ul li:nth-child(3) i {
+ font-size: 18px; 
+ vertical-align: middle; 
+ color: black; 
+}
+ul li:hover {
+   background-color: white; 
+   transition: background-color 0.3s ease; 
+   border-radius: 15px;
+}
+ ul li {
+   padding: 10px; 
+   list-style: none; 
+   display: inline-block; 
+}
+ ul li a {
+   text-decoration: none; 
+   color: inherit; 
+}
+
+ ul li a:hover {
+   color: black; 
+}
+
+
+
+
+
+/* submenu */
+/* Style cho menu chính */
+.menu-item {
+   position: relative; /* Để submenu định vị dựa trên menu chính */
+ }
+ 
+ .menu-item a {
+   text-decoration: none;
+   color: black;
+   padding: 10px 15px;
+   display: block;
+ }
+ 
+ /* Style cho submenu */
+ .submenu {
+   display: none; 
+   position: absolute; 
+   top: 100%; 
+   left: 0; 
+   background-color: white;
+   border: 1px solid #ddd; 
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+   z-index: 10; 
+ }
+ 
+ .submenu ul {
+   list-style: none; 
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .submenu li {
+   padding: 10px 15px; 
+ }
+ 
+ .submenu li a {
+   text-decoration: none; 
+   color: black; 
+   display: block;
+ }
+ 
+ .menu-item:hover .submenu {
+   display: block; 
+ }
+
+ .submenu li a:hover {
+   background-color: #CFE1B9; 
+   color: green; 
+   transition: background-color 0.3s ease; 
+ }
+ 
+
+
+
+/* slider */
+li {
+   list-style: none;
+}
+.slider {
+   padding: 20px 0;
+   height: 350px;
+}
+.slider-content {
+   display: flex;
+   justify-content: space-between;
+}
+.slider-content-left {
+   width: 80%;
+}
+.slider-content-left-top {
+   width: 200%;
+   height: 300px;
+   position: relative;
+}
+.slider-content-left-top:hover i {
+ opacity: 1;
+ 
+}
+.slider-content-left-top img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: transform 0.3s ease, box-shadow 0.3s ease; 
+   border-radius: 10px;
+}
+.slider-content-left-top img:hover {
+ transform: scale(1.1); 
+ box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.slider-content-bottom li {
+   width: 20%;
+   text-align: center;
+   cursor: pointer;
+   padding: 6px 0;
+   height: 100%;
+   line-height: 38px;
+   position: relative;
+}
+.slider-content-bottom li::before {
+   display: block;
+   content: "";
+   position: absolute;
+   height: 70%;
+   width: 1px;
+   background-color: #728156;
+   right: 0;
+}
+.slider-content-bottom li.active {
+   border-top: 4px solid #728156;
+}
+.slider-content-right {
+ gap: 20px;
+ width: 110%;
+ display: flex;
+ flex-wrap: wrap;
+ padding: 0 20px;
+ justify-content: space-around;
+}
+.slider-content-right li {
+ list-style: none;
+}
+.slider-content-right li img {
+ max-width: 300px;
+ width: 200px;
+ border-radius: 10px;
+ transition: transform 0.3s ease, border-color 0.3s ease;
+ border: 5px solid #728156;
+}
+
+
+/* con trỏ ảnh */
+.slider-content-left-top-btn {
+ position: absolute;
+ top: 50%;
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+}
+
+.slider-content-left-top-btn i {
+ color: #333;
+ font-size: 32px;
+ height: 50px;
+ width: 25px;
+ background-color: #cfcccc;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transform: translateY(-45%);
+ border-radius: 5px;
+ opacity: 0;
+ transition: all 0.3s ease;
+}
+
+.slider-content-left-top-btn i:hover {
+ transform: scale(1.2);
+ color: #ffffff; 
+ background-color: #3498db; 
+}
+
+
+/* Cấu hình video */
+video {
+ width: 200%; 
+ max-width: 1200px; 
+ height: auto; 
+ margin-top: 20px; 
+ display: block; 
+ margin-left: auto;
+ margin-right: auto;
+ border: 5px solid #728156; 
+ border-radius: 10px; 
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+ transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+}
+
+
+.container {
+ margin-bottom: 40px; 
+}
+video:hover {
+ transform: scale(1.05); 
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+ border-color: #3498db;
+}
+
+
+.content {
+ width: 80%;
+ max-width: 900px;
+ margin: 100px auto; 
+ text-align: center;
+ padding: 20px;
+ background-color: white;
+ border:3px solid #728156;
+ border-radius: 10px;
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ opacity: 0;
+ transform: translateY(20px);
+ transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.title {
+ font-size: 24px;
+ font-weight: bold;
+ color: #333;
+ margin-bottom: 20px;
+}
+
+
+.description {
+ font-size: 18px;
+ color: #555;
+ margin-bottom: 20px;
+}
+
+
+.more-text {
+ display: none;
+ font-size: 16px;
+ color: #444;
+ background-color: #728156;
+ padding: 15px;
+ border-radius: 8px;
+ margin-top: 20px;
+ transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+
+.content.visible {
+ opacity: 1;
+ transform: translateY(0);
+}
+
+.content .more-text {
+ display: block;
+}
+
+
+@keyframes fadeInUp {
+ 0% {
+   opacity: 0;
+   transform: translateY(20px);
+ }
+ 100% {
+   opacity: 1;
+   transform: translateY(0);
+ }
+}
+
+
+.content:hover .more-text {
+ display: block;
+ max-height: 1000px; 
+ opacity: 1;
+}
+
+
+.content:hover .title, .content:hover .description {
+ opacity: 1; 
+ transform: translateY(0); 
+}
+
+/* Hiệu ứng chữ nổi lên */
+@keyframes fadeInUp {
+ 0% {
+   opacity: 0;
+   transform: translateY(20px);
+ }
+ 100% {
+   opacity: 1;
+   transform: translateY(0);
+ }
+}
+
+
+.content:hover .title {
+ animation: fadeInUp 0.6s forwards;
+}
+
+.content:hover .description {
+ animation: fadeInUp 0.6s forwards 0.2s; 
+}
+
+.more-text a p {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.3s ease; 
+}
+
+
+.more-text a p:hover {
+  color: black; 
+  transform: scale(1.1); 
+}
+
+.more-text:hover {
+  background: #B6C99B;
+  transform: scale(1.02); 
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out; 
+ }
+
+
+ @keyframes flyInFade {
+  0% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes flyInFade1 {
+  0% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+@keyframes flyInFade2 {
+  0% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+@keyframes flyInFade3 {
+  0% {
+      opacity: 0;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(100px);
+  }
+}
+
+
+@keyframes flyInFade4 {
+  0% {
+      opacity: 0;
+      transform: translateY(-100px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

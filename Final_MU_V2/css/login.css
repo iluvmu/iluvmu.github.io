@@ -1,0 +1,131 @@
+body {
+    background-color: #B6C99B;
+    background-size: cover;
+}
+#khungdangnhap{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50px);  
+    animation: fadeFlyIn 0.8s forwards; 
+}
+@keyframes fadeFlyIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);  
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);    
+    }
+}
+#khung1{
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.904);
+    flex-grow: 1;
+    padding: 50px 30px 50px;
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.708) ;
+    position: relative;
+    border-radius: 10px;
+}
+.chu1{
+    font-size: 30px;
+    color: aliceblue;
+    font-family: arial;
+    text-align: center;
+    margin-bottom: 18%;
+}
+
+#nhapvo{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+    flex-grow: 1;
+    font-size: 20px;
+} 
+#nhapvo1{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+    flex-grow: 1;
+    font-size: 20px;
+}
+#nhapvo2{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: white;
+    flex-grow: 1;
+    font-size: 20px;
+}
+.khu{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.745);
+    margin-top: 20px;
+    margin-bottom:40px;
+    display: flex;
+}
+.khusai{
+    border-bottom: 1px solid rgba(255, 0, 0, 0.745);
+    margin-top: 20px;
+    margin-bottom:40px;
+    display: flex;
+}
+.khun{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.745);
+    margin-top: 20px;
+    margin-bottom:40px;
+    display: flex;
+}
+.khunsai{
+    border-bottom: 1px solid rgba(255, 0, 0, 0.745);
+    margin-top: 20px;
+    margin-bottom:40px;
+    display: flex;
+}
+#nhapvo::placeholder{
+    color:rgba(255, 255, 255, 0.66);
+}
+#nhapvo1::placeholder{
+    color:rgba(255, 255, 255, 0.66);
+}
+#guidi{
+    background: transparent;
+    background-color: rgba(0, 191, 255, 0.414);
+    border: 0;
+    color: rgba(255, 255, 255, 0.542);
+    border-radius: 2px;
+    width: 100%;
+    padding: 5%;
+    font-size: 20px;
+    transition: 0.25s ease-in-out;
+    margin-bottom: 10px;
+}
+#guidi:hover{
+    background-color: rgba(0, 191, 255, 0.842);
+    color: rgba(255, 255, 255, 0.732);
+}
+.icon{
+    width: 7%; height: 7%;
+    margin-right: 10px;
+    margin-bottom: 9px;
+    filter: brightness(0) invert(1);
+}
+#icon1{
+    width: 7%; height: 7%;
+    margin-right: 10px;
+    margin-bottom: 9px;
+    filter: brightness(0) invert(1);
+    padding: 0%; margin: 0px;
+    cursor: pointer;
+}
+.dk{
+    color: rgba(0, 255, 255, 0.503);
+    text-decoration:none ;
+}
+.dk:hover{
+    color: rgba(171, 255, 255, 0.651);
+    text-decoration:none ;
+} 

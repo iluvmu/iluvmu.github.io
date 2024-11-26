@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" href="../assets/images/image/slack-brands-solid.svg" type="image/png">
+
+</head>
+<script src="../js/jquery-3.7.1.min.js"></script>
+<body>
+
+
+
+
+    <style>
+        /* Đảm bảo video chiếm toàn bộ màn hình */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Đặt video làm nền */
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Giữ tỷ lệ video */
+            z-index: -1; /* Đặt video phía dưới nội dung */
+        }
+
+        /* Nội dung phía trên video */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="../assets/videos/video back/videoback2.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+    </video>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="khungdangnhap"> 
+        <form action="" id="khung1">
+            <h1 class="chu1"><b>ĐĂNG KÍ</b></h1>
+            <div id="khu" class="khu">
+                <img src="../assets/images/anhcuadangnhap/user.png" alt="user" class="icon">
+                <input type="text" id="nhapvo" placeholder="Tên đăng kí">
+            </div>
+            <div id="khun" class="khun">
+                <img src="../assets/images/anhcuadangnhap/key.png" alt="key" class="icon">
+                <input type="password" id="nhapvo1" placeholder="Mật khẩu">
+                <img src="../assets/images/anhcuadangnhap/visible.png" alt="mat" id="icon1"> 
+            </div>
+            <div id="khun" class="khun">
+                <img src="../assets/images/anhcuadangnhap/user.png" alt="key" class="icon" style="opacity: 0;">
+                <input type="password" id="nhapvo2" placeholder="nhập lại mật khẩu">
+            </div>
+                <input type="button" value="Đăng kí" id="guidi">
+                <a href="../pages/login.html" class="dk"> Bạn đã có tài khoảng? </a>
+        </form>
+    </div>
+</body>
+<script src="../js/ao2.js"></script>
+
+</html>
